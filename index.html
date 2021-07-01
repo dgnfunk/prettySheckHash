@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>p-sheck</title>
+    <link rel="stylesheet" href="src/app.css">
+  </head>
+  <body>
+    <header>
+      <img id="main-icon" src="./src/assets/psheck.ico" alt="">
+      <button id="minimizeWindowBtn"><img src="./src/assets/1x/baseline_minimize_black_24dp.png" /></button>
+      <button id="closeWindowBtn"><img src="./src/assets/1x/baseline_close_black_24dp.png" /></button>
+    </header>
+    <div class="main">
+      <div class="content">
+        <select name="encrypt-type" id="encrypt-type">
+          <option value="SHA256">SHA256</option>
+          <option value="MD5">MD5</option>
+        </select>
+        <div class="input-data">
+          <div class="input-search">
+            <input id='fileToCheck' type='file' hidden/>
+            <input id="currentItem" placeholder="File or String to be compared / generate" type="text">
+          </div>
+          <div class="button-search">
+            <button id="buttonToSearch"><img src="./src/assets/1x/outline_more_horiz_black_24dp.png" alt="search-file"></button>
+          </div>
+        </div>
+        <div>
+          <input id="string-compare" type="text" placeholder="Put a string to compare" disabled>
+        </div>
+      </div>
+      <div class="result">
+        <div class="copy-paste">
+          <span id="copiedText" hidden>Copied</span>
+          <img id="copiedButton" src="./src/assets/1x/outline_content_copy_white_24dp.png" alt="copy-content">
+        </div>
+        <div id="result-content"></div>
+      </div>
+      <div class="modal-buttons">
+        <button id="reset-button">Reset</button>
+        <button id="check-button">Compare</button>
+        <button id="generate-button">Generate</button>
+      </div>
+    </div>
+    <!-- <footer>Footer</footer> -->
+
+    <script src="src/app.js"></script>
+  </body>
+</html>

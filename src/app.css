@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/Roboto-Regular.ttf);
+}
+
+button {
+    font-family: Roboto;
+}
+
+select {
+    font-family: Roboto;
+}
+
+body {
+    font-family: Roboto;
+    background-color: #F5F5F5;
+    color: #404040;
+    margin: 0px;
+    height: 360px;
+    width: 430px;
+}
+
+header {
+    padding: 2px;
+    display: flex;
+    background-color: #267993;
+    color: #F5F5F5;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    /* cursor: move; */
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+header #main-icon {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+header button {
+    background: none;
+    border: none;
+    -webkit-app-region: no-drag;
+}
+
+header img:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.main {
+    padding: 8px;
+    height: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 50%;
+}
+
+.result {
+    height: 30%;
+    background-color: #404040;
+    color: #F5F5F5;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+.result .copy-paste {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.result .copy-paste img {
+    cursor: pointer;
+}
+
+.modal-buttons {
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    height: 35px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.content select {
+    height: 35px;
+    width: 85%;
+    margin-bottom: 11px;
+}
+
+.content .input-data {
+    height: 35px;
+    width: 85%;
+    display: flex;
+    align-items: end;
+    margin-bottom: 11px;
+}
+
+.content div {
+    height: 35px;
+}
+
+.content div input {
+    height: 100%;
+    width: 98%;
+}
+
+.content .input-data .input-search {
+    height: 100%;
+    flex: 8;
+}
+
+.content .input-data .input-search input {
+    height: 85%;
+    width: 96%;
+}
+
+.content .input-data .button-search {
+    flex: 1px;
+    height: 100%;
+}
+
+.content .input-data .button-search button {
+    height: 100%;
+}
+
+#result-content {
+    overflow-wrap: break-word;
+    margin-top: 10px;
+}
+
+#generate-button {
+    background-color: #adc178;
+    border-radius: 4px;
+}
+
+#check-button {
+    border-radius: 4px;
+}
+
+#reset-button {
+    display: none;
+    border-radius: 4px;
+}
+
+#copiedText {
+    font-style: italic;
+    font-size: small;
+    margin-right: 10px;
+}
+
+.checked-button-active {
+    background-color: #39B7DF;
+}
+
+.success-active {
+    border-color: #adc178;
+    background-color: #adc178;
+}
+
+.error-input {
+    border-color: #c44536;
+    background-color: #c44536;
+}
+
+.error-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
